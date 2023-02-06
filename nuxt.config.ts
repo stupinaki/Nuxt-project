@@ -3,7 +3,7 @@ export default defineNuxtConfig({
     pages: true,
     app: {
         head: {
-            title: "Nutx-project",
+            title: "Nuxt-project",
             meta: [
                 {
                     name: "description",
