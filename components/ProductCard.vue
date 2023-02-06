@@ -26,7 +26,6 @@ const {product} = defineProps(['product']);
   .product-card {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    height: 100%;
     padding: 12px;
     background-color: #fff;
     border-radius: 12px;
@@ -53,6 +52,8 @@ const {product} = defineProps(['product']);
   }
   .link {
     text-align: end;
+    text-decoration: none;
+    color: #000;
   }
   .link:hover {
     text-decoration: underline;

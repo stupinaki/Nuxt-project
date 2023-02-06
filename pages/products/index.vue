@@ -25,7 +25,7 @@
 <style scoped>
   .product-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
     gap: 20px;
     margin: 20px 0;
   }

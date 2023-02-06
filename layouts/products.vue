@@ -1,7 +1,7 @@
 <template>
   <div class="products-container">
     <header class="header">
-        <NuxtLink to="/products"> Back to products </NuxtLink>
+        <NuxtLink to="/products" class="link"> Back to products </NuxtLink>
     </header>
     <div class="slot-container">
       <slot/>
@@ -11,14 +11,13 @@
 </template>
 
 <style scoped>
-  nav {
-    padding: 20px 0;
-  }
-  nav a {
+  .link {
     font-size: 20px;
     cursor: pointer;
+    color: #000;
+    text-decoration: none;
   }
-  nav a:hover {
+  .link:hover {
     text-decoration: underline;
   }
   .products-container {

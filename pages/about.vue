@@ -14,14 +14,11 @@
       finibus. Donec eget vehicula est, et maximus tortor.
     </p>
     data: {{data}}
-    response: {{ response }}
   </div>
 </template>
 
 <script setup>
-//todo не найдена такая страница
-  const data = await useFetch('/api/someServerRouts')
-  const response = await useFetch('/api/ninja')
+  const data = await useFetch('/api/someServerRouts');
 </script>
 
 <style scoped>

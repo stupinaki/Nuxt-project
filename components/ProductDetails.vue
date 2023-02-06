@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <div class="img-container">
-      <img :src="product.image" alt="product image">
+      <img :src="product.image" alt="product image" class="img">
     </div>
 
     <div class="details">
@@ -9,9 +9,9 @@
       <p>{{ product.description }}</p>
       <p class="price"> Price: {{ product.price }} $</p>
 
-      <button class="add-btn">
+      <button class="add-btn" type="button">
         <i class="material-icons"> add_shopping_cart </i>
-        <p> Add to cart</p>
+        Add to cart
       </button>
     </div>
   </div>
@@ -51,15 +51,32 @@ const {product} = defineProps(['product']);
     margin: 0 auto;
     max-width: 400px;
   }
+  .img {
+    max-width: 100%;
+  }
   .add-btn {
     display: flex;
+    align-items: center;
     gap: 12px;
     padding: 16px;
     border-radius: 16px;
+    border: none;
     background-color: #36e4da;
     box-shadow: 1px 1px 3px #aaaaaa;
+    cursor: pointer;
   }
   .add-btn:hover {
     background-color: #36e4daCC;
+  }
+
+  @media screen and (max-width: 600px) {
+    .card {
+      display: flex;
+      flex-direction: column;
+    }
+    .img-container {
+      margin: 0 auto;
+      max-width: 200px;
+    }
   }
 </style>
