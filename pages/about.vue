@@ -18,7 +18,7 @@
 </template>
 
 <script setup>
-  const data = await useFetch('/api/someServerRouts');
+  const data = await useFetch('/api/someServerRouts?name=mario');
 </script>
 
 <style scoped>
