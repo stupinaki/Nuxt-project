@@ -13,13 +13,8 @@
       pulvinar vel condimentum quis, ornare ac neque. Mauris venenatis mauris finibus erat bibendum
       finibus. Donec eget vehicula est, et maximus tortor.
     </p>
-    data: {{data}}
   </div>
 </template>
-
-<script setup>
-  const data = await useFetch('/api/someServerRouts?name=mario');
-</script>
 
 <style scoped>
    .about-container {
